@@ -10,4 +10,4 @@ pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
 
 c = redis.Redis(connection_pool=pool)
 
-c.set(ran, r1)
+c.set(ran, r1, 10)  #遇到问题先找地方问，比如Issues里面。
